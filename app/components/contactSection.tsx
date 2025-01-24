@@ -1,38 +1,59 @@
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 
-export function AboutSection() {
+export function ContactSection() {
   return (
-    <section id="about" className="py-16">
+    <section id="contact" className="py-16 bg-primary/5">
       <div className="container">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">About Us</div>
-            <h2 className="text-3xl font-bold">About GoShawty</h2>
+        <div className="max-w-2xl mx-auto space-y-12">
+          <div className="text-center space-y-4">
+            <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Contact Us</div>
+            <h2 className="text-3xl font-bold">Get in Touch</h2>
             <p className="text-muted-foreground">
-              GoShawty is a modern crowdfunding platform that connects people with causes they care about. We believe in
-              the power of community and collective action to make real change happen.
+              Have questions about GoShawty? We're here to help. Send us a message and we'll get back to you as soon as
+              possible.
             </p>
-            <p className="text-muted-foreground">
-              Our platform makes it easy to start campaigns, donate to causes, and track the impact of your
-              contributions. With transparent operations and secure payment processing, you can focus on what matters
-              most - making a difference.
-            </p>
-            <Button variant="outline" className="border-primary/20 hover:bg-primary/10">
-              Learn More
-            </Button>
           </div>
-          <div className="relative">
-            <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
-            <div className="relative h-[400px] rounded-2xl overflow-hidden">
-              <Image
-                src={`${process.env.NEXT_PUBLIC_VERCEL_URL}/placeholder.svg?height=400&width=600`}
-                alt="About GoShawty"
-                fill
-                className="object-cover"
+          <form className="space-y-6">
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <label htmlFor="name" className="text-sm font-medium">
+                  Name
+                </label>
+                <Input
+                  id="name"
+                  placeholder="Enter your name"
+                  className="border-primary/20 focus-visible:ring-primary"
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="email" className="text-sm font-medium">
+                  Email
+                </label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  className="border-primary/20 focus-visible:ring-primary"
+                />
+              </div>
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="message" className="text-sm font-medium">
+                Message
+              </label>
+              <Textarea
+                id="message"
+                placeholder="Enter your message"
+                rows={6}
+                className="border-primary/20 focus-visible:ring-primary"
               />
             </div>
-          </div>
+            <Button size="lg" className="w-full">
+              Send Message
+            </Button>
+          </form>
         </div>
       </div>
     </section>
