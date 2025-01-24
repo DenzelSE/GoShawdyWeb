@@ -11,7 +11,7 @@ export function ContactSection() {
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Contact Us</div>
             <h2 className="text-3xl font-bold">Get in Touch</h2>
             <p className="text-muted-foreground">
-              Have questions about GoShawty? We're here to help. Send us a message and we'll get back to you as soon as
+              Have questions about GoShawty? We&apos;re here to help. Send us a message and we&apos;ll get back to you as soon as
               possible.
             </p>
           </div>

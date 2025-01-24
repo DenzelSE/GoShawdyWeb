@@ -8,7 +8,7 @@ export function NavBar() {
     <header className="fixed top-0 w-full z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold text-primary">GoShawty</span>
+          <span className="text-xl font-bold text-primary">GoShawdy</span>
         </Link>
         <nav className="hidden md:flex gap-6">
           <Link href="#features" className="text-sm font-medium hover:text-primary transition-colors">

@@ -18,7 +18,7 @@ export function FeaturesSection() {
               <CardTitle>Direct Impact</CardTitle>
             </CardHeader>
             <CardContent>
-              Your donations go directly to those who need it, with minimal platform fees and maximum transparency.
+              {`Your donations go directly to those who need it, with minimal platform fees and maximum transparency.`}
             </CardContent>
           </Card>
           <Card className="border-primary/20 hover:border-primary/40 transition-colors">
@@ -27,7 +27,7 @@ export function FeaturesSection() {
               <CardTitle>Secure & Trusted</CardTitle>
             </CardHeader>
             <CardContent>
-              Bank-level security and verification processes ensure your donations are safe and reach the right people.
+              {`Bank-level security and verification processes ensure your donations are safe and reach the right people.`}
             </CardContent>
           </Card>
           <Card className="border-primary/20 hover:border-primary/40 transition-colors">
@@ -36,7 +36,7 @@ export function FeaturesSection() {
               <CardTitle>Track Progress</CardTitle>
             </CardHeader>
             <CardContent>
-              Real-time updates and progress tracking keep you informed about the impact of your contributions.
+              {`Real-time updates and progress tracking keep you informed about the impact of your contributions.`}
             </CardContent>
           </Card>
           <Card className="border-primary/20 hover:border-primary/40 transition-colors">
@@ -63,7 +63,7 @@ export function FeaturesSection() {
               <CardTitle>Analytics</CardTitle>
             </CardHeader>
             <CardContent>
-              Get detailed insights into your campaign's performance with our comprehensive analytics dashboard.
+              {`Get detailed insights into your campaign's performance with our comprehensive analytics dashboard.`}
             </CardContent>
           </Card>
         </div>
