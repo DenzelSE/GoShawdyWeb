@@ -1,7 +1,11 @@
+import { AboutSection } from "@/components/about";
+import { NavBar } from "@/components/navBar";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <p>Go Shawdy</p>
+    <><NavBar /><main>
+      <AboutSection />
+    </main></>
   );
 }
