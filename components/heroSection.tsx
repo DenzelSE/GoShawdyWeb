@@ -1,7 +1,35 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import GooglePlayDownloadButton from "./ui/GooglePlayDownloadButton"
+import {motion} from "framer-motion"
+import AppStoreButton from "./ui/AppStoreDownloadButton";
 
 export function HeroSection() {
+
+  const floatingAnimation = {
+    y: [-10, 10],
+    transition: {
+      y: {
+        duration: 2,
+        repeat: Infinity,
+        repeatType: "reverse",
+        ease: "easeInOut"
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <section className="pt-24 md:pt-32 pb-16 bg-gradient-to-b from-primary/10 to-background">
       <div className="container flex flex-col md:flex-row items-center gap-8">
@@ -16,14 +44,8 @@ export function HeroSection() {
             Start your milestones campaign or support others. Every donation makes a difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Button size="lg" className="gap-2">
-              <Image src="/google-play.svg" alt="Google Play" width={24} height={24} className="dark:invert" />
-              Google Play
-            </Button>
-            <Button size="lg" variant="outline" className="gap-2 border-primary/20 hover:bg-primary/10">
-              <Image src="/app-store.svg" alt="App Store" width={24} height={24} className="dark:invert" />
-              App Store
-            </Button>
+              <GooglePlayDownloadButton/>
+              <AppStoreButton/>
           </div>
         </div>
         <div className="flex-1 relative">
