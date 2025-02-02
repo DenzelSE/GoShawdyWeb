@@ -1,34 +1,9 @@
-import { Button } from "@/components/ui/button"
+
 import Image from "next/image"
 import GooglePlayDownloadButton from "./ui/GooglePlayDownloadButton"
-import {motion} from "framer-motion"
+
 import AppStoreButton from "./ui/AppStoreDownloadButton";
-
 export function HeroSection() {
-
-  const floatingAnimation = {
-    y: [-10, 10],
-    transition: {
-      y: {
-        duration: 2,
-        repeat: Infinity,
-        repeatType: "reverse",
-        ease: "easeInOut"
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut"
-      }
-    }
-  };
 
   return (
     <section className="pt-24 md:pt-32 pb-16 bg-gradient-to-b from-primary/10 to-background">
