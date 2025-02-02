@@ -51,10 +51,10 @@ export function HeroSection() {
         <div className="flex-1 relative">
           <div className="absolute -top-8 -left-8 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
           <Image
-            src={`${process.env.NEXT_PUBLIC_VERCEL_URL}/placeholder.svg?height=600&width=400`}
+            src="/Goshawty.png" 
             alt="App Preview"
-            width={400}
-            height={600}
+            width={600}
+            height={800}
             className="rounded-2xl shadow-2xl relative"
           />
         </div>

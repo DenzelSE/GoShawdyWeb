@@ -5,7 +5,7 @@ export function AboutSection() {
   return (
     <section id="about" className="py-16">
       <div className="container">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 mx-auto gap-12  items-center">
           <div className="space-y-6">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">About Us</div>
             <h2 className="text-3xl font-bold">About GoShawty</h2>
@@ -26,7 +26,7 @@ export function AboutSection() {
             <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
             <div className="relative h-[400px] rounded-2xl overflow-hidden">
               <Image
-                src={`${process.env.NEXT_PUBLIC_VERCEL_URL}/placeholder.svg?height=400&width=600`}
+                src="/logo.jpg"
                 alt="About GoShawty"
                 fill
                 className="object-cover"
